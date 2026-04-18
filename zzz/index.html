@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Sistema de Activos Fijos</title>
+<style>
+body{
+    margin:0;
+    font-family: Tahoma, Arial, sans-serif;
+    background:#cfcfcf;
+}
+
+/* BARRA SUPERIOR */
+.header{
+    background: linear-gradient(to right, #6fa3c8, #2b5876);
+    color:white;
+    padding:12px 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom:2px solid #1c3d55;
+}
+.header h1{
+    margin:0;
+    font-size:26px;
+    letter-spacing:2px;
+}
+
+/* CONTENEDOR */
+.container{
+    display:flex;
+    height:calc(100vh - 60px);
+}
+
+/* MENÚ LATERAL */
+.sidebar{
+    width:240px;
+    background:#e9e9e9;
+    padding:10px;
+    border-right:2px solid #9a9a9a;
+}
+.sidebar h3{
+    text-align:center;
+    color:#1f3e55;
+}
+
+.btn{
+    display:block;
+    width:100%;
+    margin:6px 0;
+    padding:10px;
+    border:1px solid #6d8aa3;
+    background: linear-gradient(to bottom, #dbe6ef, #a9bfd3);
+    cursor:pointer;
+    text-align:center;
+    font-size:14px;
+    box-shadow: inset 0 1px 0 #fff;
+}
+
+.btn:hover{
+    background: linear-gradient(to bottom, #b7cfe3, #7fa2c0);
+}
+
+/* CONTENIDO */
+.content{
+    flex:1;
+    background: url('jpj.png') center/cover no-repeat;
+    position:relative;
+}
+
+.overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background: linear-gradient(to bottom, rgba(180,210,230,0.7), rgba(20,60,100,0.9));
+}
+
+.info{
+    position:absolute;
+    top:20px;
+    left:20px;
+    color:#0d2f4a;
+    background:rgba(255,255,255,0.6);
+    padding:10px;
+    border-radius:5px;
+}
+
+.footer-text{
+    position:absolute;
+    bottom:20px;
+    right:20px;
+    color:white;
+    font-size:20px;
+    font-weight:bold;
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+    <h1>VSIAF</h1>
+    <div>
+        Usuario: admin<br>
+        Backups: None
+    </div>
+</div>
+
+<div class="container">
+
+    <div class="sidebar">
+        <h3>MENU PRINCIPAL</h3>
+        <div class="btn">Activos Fijos</div>
+        <div class="btn">Grupos y Auxiliares</div>
+        <div class="btn">Oficinas y Responsables</div>
+        <div class="btn">Generar Reportes</div>
+        <div class="btn">Administradores</div>
+        <div class="btn">Iniciar sesión</div>
+        <div class="btn">Respaldos BD</div>
+        <div class="btn">Administrar Unidad</div>
+        <div class="btn">Localización BD</div>
+    </div>
+
+    <div class="content">
+        <div class="overlay"></div>
+
+        <div class="info">
+            <p><b>ENTIDAD:</b> 821 - Administración Autónoma para Obras Sanitarias - Potosí</p>
+            <p><b>UNIDAD:</b> UA01 - Unidad de Activos Fijos</p>
+        </div>
+
+        <div class="footer-text">Potosí</div>
+    </div>
+
+</div>
+
+</body>
+</html>
